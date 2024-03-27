@@ -13,12 +13,9 @@ Discord is extremely vast with it's feature set, so for now I'll be focusing on 
 - Framer Motion or React-Spring or Both 
 - Editing on Sublime Text
 
-### Features Implement 
-1. 
-
 ### TODO
-1. Describe USER DB model on Supabase
-2. Build Registration & Login UI then hook them up to backend functions talking with Supabase
-3. Handle Authoration with middleware.ts logic
+1. ~~Describe USER DB model on Supabase~~
+2. ~~Build Registration & Login UI then hook them up to backend functions talking with Supabase~~
+3. ~~Handle Authoration with middleware.ts logic~~
 4. Describe FRIENDSHIP DB model on Supabase
 5. Build simple friend request feature(send request, view requests, action on request) within Dashboard then hook it up to backend function talking with Supabase
