@@ -17,5 +17,8 @@ Discord is extremely vast with it's feature set, so for now I'll be focusing on 
 1. ~~Describe USER DB model on Supabase~~
 2. ~~Build Registration & Login UI then hook them up to backend functions talking with Supabase~~
 3. ~~Handle Authoration with middleware.ts logic~~
-4. Describe FRIENDSHIP DB model on Supabase
-5. Build simple friend request feature(send request, view requests, action on request) within Dashboard then hook it up to backend function talking with Supabase
+4. ~~Describe FRIENDSHIP DB model on Supabase~~
+5. ~~Build simple friend request feature(send request, view requests, action on request) within Dashboard then hook it up to backend function talking with Supabase~~
+6. Describe CHANNELS & MESSAGES DB models on supabase
+7. Build out routing for direct messages
+8. Implement realtime chat for those DM channels
