@@ -38,11 +38,6 @@ export default function Register() {
                 </label>
                 <br />
                 <label>
-                    Username:
-                    <input type="text" name="username" onChange={handleInputChange} />
-                </label>
-                <br />
-                <label>
                     Password:
                     <input type="password" name="password" onChange={handleInputChange} />
                 </label>
