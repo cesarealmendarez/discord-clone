@@ -11,3 +11,7 @@ interface Friendship {
     sendingUser: User;
     receivingUser: User;
 }
+
+interface StoreProps {
+    channelID: string;
+}

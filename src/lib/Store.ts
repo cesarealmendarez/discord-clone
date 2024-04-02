@@ -6,12 +6,9 @@ export const useStoreUpdated = (props) => {
     const [newMessage, handleNewMessage] = useState(null)
 
     useEffect(() => {
-        const messageListener = supabase
-            .channel('messages')
-            .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'messages' }, (payload) =>
-                handleNewMessage(payload.new)
-            )
-            .subscribe()
+        const messageListener = supabaseBrowserClient.channel('messages').on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'messages' }, (payload) =>
+            handleNewMessage(payload.new)
+        ).subscribe()
     }, []);
 
     useEffect(() => {
@@ -20,7 +17,7 @@ export const useStoreUpdated = (props) => {
                 setMessages(messages);
             });
         }
-    }, [props.channelID])
+    }, [props.channelID]);
 
     useEffect(() => {
         if (newMessage && newMessage.channel_id == props.channelID) {
